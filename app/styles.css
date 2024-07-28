@@ -1,0 +1,124 @@
+/* styles.css */
+
+/* Styles from React project */
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
+}
+
+.card {
+    padding: 2em;
+}
+
+.read-the-docs {
+    color: #888;
+}
+
+/* Styles for the current project */
+.main {
+    padding: 4rem;
+    background: linear-gradient(135deg, #1f1f1f, #222);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.fixed-top,
+.fixed-bottom {
+    width: 100%;
+    padding: 1rem 0;
+    position: fixed;
+    left: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.fixed-top {
+    top: 0;
+}
+
+.fixed-bottom {
+    bottom: 0;
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clickable-area {
+    position: relative;
+}
+
+.float-animation {
+    position: absolute;
+    font-size: 5rem;
+    font-weight: bold;
+    opacity: 0;
+    animation: float 1s ease-out;
+}
+
+@keyframes float {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+}
+
+.energy-bar {
+    background: #f9c035;
+    border-radius: 9999px;
+    margin-top: 1rem;
+}
+
+.energy-bar-inner {
+    background: linear-gradient(to right, #f3c45a, #fffad0);
+    height: 1rem;
+    border-radius: 9999px;
+}
